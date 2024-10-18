@@ -9,10 +9,10 @@ app.use(bodyparser.urlencoded({ extended: false }));
 
 var mysql = require("mysql2");
 var pool = mysql.createPool({
-  host: "bs2yku6jwgpoppvqen9o-mysql.services.clever-cloud.com",
-  user: "uo48jts4vghyypfz",
-  password: "kFdkE08AHZjeDAewwgF6",
-  database: "bs2yku6jwgpoppvqen9o",
+  host: "sql.freedb.tech",
+  user: "freedb_Lonelyboiz",
+  password: "5w36xvm#ZFHwTbD",
+  database: "freedb_RespondData",
   port: 3306,
   connectionLimit: 20,
   waitForConnections: true,
@@ -24,7 +24,7 @@ app.listen(3000, () =>
 );
 
 app.get("/", (req, res) => {
-  res.send("Hello World 1.1");
+  res.send("Hello World 1.2");
 });
 
 app.get("/respone", (req, res) => {
